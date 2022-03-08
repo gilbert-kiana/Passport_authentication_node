@@ -3,6 +3,12 @@ const msgs = document.getElementById("msgs");
 const presence = document.getElementById("presence-indicator");
 let allChat = [];
 
+function kaiser() {
+  console.log("it is working from the server");
+}
+
+kaiser();
+
 const socket = io("http://localhost:5000/dashboard");
 
 socket.on("connect", () => {
