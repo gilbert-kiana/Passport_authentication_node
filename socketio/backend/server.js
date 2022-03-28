@@ -8,7 +8,7 @@ const getMsgs = () => Array.from(msg).reverse();
 
 msg.push({
   user: "brian",
-  text: "hi",
+  text: "yes server inafanya kazi",
   time: Date.now(),
 });
 
