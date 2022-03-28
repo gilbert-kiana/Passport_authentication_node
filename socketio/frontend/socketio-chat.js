@@ -3,13 +3,7 @@ const msgs = document.getElementById("msgs");
 const presence = document.getElementById("presence-indicator");
 let allChat = [];
 
-function kaiser() {
-  console.log("it is working from the server");
-}
-
-kaiser();
-
-const socket = io("http://localhost:5000");
+const socket = io("http://localhost:8080");
 
 socket.on("connect", () => {
   console.log("connected");
@@ -47,9 +41,3 @@ function render() {
 
 const template = (user, msg) =>
   `<li class="collection-item"><span class="badge">${user}</span>${msg}</li>`;
-
-{
-  /* <h1 class="mt-4">Dashboard</h1>
-<p class="lead mb-3">Welcome <%= user.name %></p>
-<a href="/users/logout" class="btn btn-secondary">Logout</a> */
-}
