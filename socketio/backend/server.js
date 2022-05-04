@@ -2,14 +2,13 @@ import http from "http";
 import handler from "serve-handler";
 import nanobuffer from "nanobuffer";
 import { Server } from "socket.io";
-const express = require("express");
 
 const msg = new nanobuffer(50);
 const getMsgs = () => Array.from(msg).reverse();
 
 msg.push({
   user: "brian",
-  text: "yes server inafanya kazi",
+  text: "hi",
   time: Date.now(),
 });
 

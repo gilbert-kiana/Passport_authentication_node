@@ -5,8 +5,6 @@ let allChat = [];
 
 const socket = io("http://localhost:8080");
 
-//I get it now ,I will be downloading nginx to link between the servers
-
 socket.on("connect", () => {
   console.log("connected");
   presence.innerText = "🟢";
